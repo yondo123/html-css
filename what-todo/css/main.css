@@ -1,0 +1,244 @@
+body {
+    background-color: #fff;
+    height: 100vh;
+    margin: 0;
+}
+
+header,
+main,
+.todo {
+    padding: 0 3.2rem;
+}
+
+
+header {
+    display: flex;
+    border-bottom: 0.1rem solid var(--border-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--icon-color);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header strong {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.app-logo {
+    padding: 1rem 0;
+    margin-right: 2rem;
+}
+
+.app-logo img {
+    width: 15rem;
+    height: 10.7rem;
+}
+
+.app-header {
+    width: 100%;
+    padding-top: 2rem;
+    line-height: 0.5;
+}
+
+nav {
+    width: 100%;
+}
+
+.main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu li {
+    list-style: none;
+    background-color: #fff;
+}
+
+.main-menu a {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 0.8rem;
+}
+
+.select {
+    color: var(--main-color);
+    font-weight: 700;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+section {
+    border-radius: 0.8rem;
+    border: 0.2rem solid var(--border-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .board {
+    margin-top: 3.2rem;
+    width: 100%;
+}
+
+main .board:nth-child(1) {
+    margin-right: 3.2rem;
+}
+
+.board {
+    line-height: 0.8;
+}
+
+.board h1 {
+    color: var(--font-color);
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-left: 3rem;
+}
+
+.board a {
+    text-decoration: none;
+}
+
+.board img {
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.board li {
+    list-style: none;
+    display: flex;
+    margin: 1.2rem 0;
+}
+
+
+.board li a {
+    margin-left: 1.2rem;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.board h2 {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.board p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.todo {
+    margin: 3.2rem 3.2rem;
+}
+
+
+.todo h1 {
+    color: var(--font-color);
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-left: 0.1rem;
+}
+
+.todo a {
+    text-decoration: none;
+}
+
+.todo table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.todo table th {
+    padding: 2rem 0;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--border-color);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.todo table td {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.todo tbody tr {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.todo tbody td:nth-child(3),
+.todo thead th:nth-child(3) {
+    text-align: left;
+}
+
+
+.status-done,
+.status-todo,
+.status-doing {
+    display: inline-block;
+    border-radius: 3rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+}
+
+.status-done {
+    background-color: #2ecc71;
+}
+
+.status-doing {
+    background-color: #f1c40f;
+}
+
+.status-todo {
+    background-color: var(--err-mesaage-color);
+}
+
+footer {
+    width: 100%;
+    padding : 2rem 0;
+    background-color: var(--input-color);
+    border: 1px solid var(--border-color);
+}
+
+.footer-menu {
+    padding : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu li {
+    list-style: none;
+    padding-left: 5rem;
+}
+
+.footer-menu button {
+    font-weight: 500;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.footer-menu p {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
