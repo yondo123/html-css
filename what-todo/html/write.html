@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WhatTodo?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="../assets/summernote-lite.js"></script>
+    <script src="../assets/summernote-ko-KR.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layouts.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/post.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/summernote-lite.css'>
+</head>
+<body>
+    <header>
+        <div class="app-logo">
+            <img src="../img/app_logo.png" alt="logo">
+            
+        </div>
+        <div class="app-header">
+            <a href="#">
+                <h1>WhatTodo</h1>
+                <strong>당신의 할 일을 공유해보세요.</strong>
+            </a>
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">TODO</a>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                    </li>
+                    <li class="select">
+                        <a href="#">스터디</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="post-info">
+            <h1 class="heading">글쓰기</h1>
+            <strong class="board-type">스터디 게시판</strong>
+        </div>
+        <div class="post">
+            <dl>
+                <div class="post-detail">
+                    <dt class="subject">제목</dt>
+                    <dd>
+                        <input type="text" id="title" placeholder="제목을 입력해주세요." maxlength="500">
+                        <label for="title">글쓰기 제목</label>
+                    </dd>
+                </div>
+                <div class="post-detail">
+                    <dt class="category">카테고리 선택</dt>
+                    <dd>
+                        <select id="category">
+                            <option>Python</option>
+                            <option>PHP</option>
+                            <option>Etc</option>
+                        </select>
+                        <label for="category">카테고리</label>
+                    </dd>
+                </div>
+                <div class="post-detail">
+                    <dt class="content">내용</dt>
+                    <dd class="summernote">
+                        <div id="summernote"></div>
+                    </dd>
+                </div>
+            </dl>
+        </div>
+        <div class="post-buttons">
+            <button type="button">글쓰기</button>
+            <button type="button">취소</button>
+        </div>
+    </main>
+</body>
+<script>
+    //summer-note setting
+    $('#summernote').summernote({
+      toolbar: [
+        ['style', ['bold', 'italic', 'underline', 'clear']],
+        ['fontsize', ['fontsize']],
+        ['color', ['color']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']],
+        ['insert', ['link', 'picture']],
+      ],
+      focus: true, // 에디터 로딩후 포커스를 맞출지 여부
+      lang: "ko-KR", // 한글 설정
+      placeholder: '최대 1200자까지 쓸 수 있습니다', //placeholder 설정
+      callbacks : {
+        onKeyup : function(e){
+             console.log(e.currentTarget.innerText.length);
+          },
+          onPaste : function(e){
+            console.log(e.currentTarget.innerText.length);
+          }
+      }
+    });
+</script>
+</html>
