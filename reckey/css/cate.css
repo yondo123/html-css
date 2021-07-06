@@ -1,0 +1,66 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    margin: 0;
+}
+
+main {
+    margin: 0 3.4rem;
+    overflow-y: scroll;
+    height: 64rem;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.category {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.item:first-child {
+    margin-top: 1.75rem;
+}
+
+.item {
+    height: 8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    margin-top: 3.5rem;
+}
+
+.item>a {
+    position: relative;
+    color: var(--font-color);
+    display: flex;
+    align-items: flex-end;
+}
+
+.item img {
+    border: 1px solid var(--border-color);
+    margin: 0.6rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+}
+
+.company-name {
+    color: var(--icon-color);
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
