@@ -9,7 +9,8 @@ header {
 }
 
 main {
-    margin: 0 3.4rem;
+    width: 90%;
+    margin: 0 3.5416666666666665%;
 }
 
 .sort select {
@@ -21,7 +22,6 @@ main {
 
 main {
     overflow-y: scroll;
-    height: 64rem;
 }
 
 main::-webkit-scrollbar {

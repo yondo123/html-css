@@ -78,7 +78,10 @@ header button:hover {
 
 /* footer */
 footer {
-    margin : 0 3.4rem;
+    margin: 0 3.5416666666666665%;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
 }
 
 .footer-link {
