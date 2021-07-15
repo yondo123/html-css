@@ -27,7 +27,8 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <!-- 팝업모드 시 class="popup" -->
+    <main class="popup">
         <div class="model">
             <strong>Leopold FC900R</strong>
         </div>
@@ -92,9 +93,42 @@
                         <i class="fas fa-2x fa-play-circle"></i>
                     </button>
                 </li>
+                <li class="review-item">
+                    <div class="info">
+                        <strong class="writer">admin</strong>
+                        <p class="summary">
+                            키보드 정말 좋긴하지만 가끔식은 통울림이..
+                            <button type="button" class="btn-spread"><i class="fas fa-caret-down"></i></button>
+                        </p>
+                    </div>
+                    <!-- 레코드 존재 : recplay, 레코드 파일 미존재 : recnone -->
+                    <button type="button" class="btn-recplay">
+                        <i class="fas fa-2x fa-play-circle"></i>
+                    </button>
+                </li>
             </ul>
         </div>
     </main>
+    <section class="write-wrap">
+        <div class="interactive">
+            <div class="rating-wrap">
+                <i class="fas fa-2x fa-star star"></i>
+                <i class="fas fa-2x fa-star star"></i>
+                <i class="fas fa-2x fa-star star"></i>
+                <i class="fas fa-2x fa-star star"></i>
+                <i class="far fa-2x fa-star unstar"></i>
+            </div>
+            <button type="button" class="btn-mic">
+                <i class="fas fa-3x fa-microphone"></i>
+            </button>
+        </div>
+        <textarea name="review" id="review-area" cols="15" rows="10">
+        </textarea>
+        <div class="article-button">
+            <button type="button" class="write">등록</button>
+            <button type="button" class="cancel">취소</button>
+        </div>
+    </section>
     <footer>
         <ul class="footer-link">
             <li>

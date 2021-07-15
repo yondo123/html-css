@@ -8,6 +8,11 @@ header {
     margin: 0;
 }
 
+.popup {
+    opacity: 0.3;
+    z-index: -1;
+}
+
 main {
     width: 90%;
     overflow-y: scroll;
@@ -150,6 +155,73 @@ img {
 .writer {
     font-size: 1.4rem;
     border-bottom: 0.1rem solid var(--border-color);
+}
+
+.write-wrap {
+    z-index: 0;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 1rem;
+    width:72.083333333333336%;
+    height: 50%;
+}
+
+.write-wrap > textarea {
+    color: var(--font-color);
+    width: 100%;
+    height: 100%;
+    border-color: var(--border-color);
+    border-radius: 1rem;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; /*remove the resize handle on the bottom right*/
+}
+
+.rating-wrap {
+    color: #fff;
+    display: inline-block;
+    width: 15rem;
+}
+
+.btn-mic {
+    width:5rem;
+    height: 5rem;
+    border-style: none;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.interactive, .article-button {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.article-button > button {
+    margin-right: 1.2rem;
+}
+
+.interactive, textarea {
+    margin-bottom: 1rem;
+}
+
+.write, .cancel, .registry {
+    padding: 0.4rem 1.2rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 1rem;
+    color: #fff;
+    background-color: var(--icon-color);
 }
 
 .summary {
