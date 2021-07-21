@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='git-dropdown.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button type="button" class="dropdown-button">
+            <img src="https://user-images.githubusercontent.com/19285811/69063907-43da4800-0a58-11ea-8efb-4b57dca4e3fe.png"
+                alt="user">
+        </button>
+        <div class="dropdown-menu">
+            <h3>
+                <a href="https://jinyisland.kr">Signed in as <strong>yondo123</strong></a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">Your profile</a>
+                </li>
+                <li>
+                    <a href="#">Your repositories</a>
+                </li>
+                <li>
+                    <a href="#">Your projects</a>
+                </li>
+                <li>
+                    <a href="#">Your stars</a>
+                </li>
+                <li>
+                    <a href="#">Your stars</a>
+                </li>
+                <li>
+                    <a href="#">Feature preview</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    var dropdownMenu = document.querySelector(".dropdown-menu")
+    var dropdownButton = document.querySelector(".dropdown-button")
+
+    dropdownButton.addEventListener("click", function(event) {
+    if (this.active) {
+        dropdownMenu.classList.remove("active")
+    } else {
+        dropdownMenu.classList.add("active")
+    }
+
+    this.active = !this.active
+    })
+
+    dropdownButton.active = false
+</script>
+</html>

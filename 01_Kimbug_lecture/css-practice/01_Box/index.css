@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.child {
+    width: 300px;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+    order: 3;
+}
+
+.gr {
+    background-color: green;
+    order: 1;
+}
+
+.blue {
+    background-color: blue;
+    order: 2;
+}

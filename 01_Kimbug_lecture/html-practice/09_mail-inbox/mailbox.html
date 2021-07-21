@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gmail</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='mailbox.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <table class="inbox">
+        <thead>
+            <tr class="sr-only">
+                <th scope="col">Action</th>
+                <th scope="col">Sender</th>
+                <th scope="col">Content</th>
+                <th scope="col">Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="read">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" name="" id="inbox-1">
+                            <label for="inbox-1" class="sr-only">select email</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">Favorite Button</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    clue
+                </td>
+                <td>
+                    <a href="#">
+                        <span>hello, yondo123 </span><strong>by clue team.</strong>
+                    </a>
+                </td>
+                <td>
+                    11:14 AM
+                </td>
+            </tr>
+            <tr class="unread">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" name="" id="inbox-1">
+                            <label for="inbox-1" class="sr-only">select email</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">Favorite Button</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    clue
+                </td>
+                <td>
+                    <a href="#">
+                        <span>hello, yondo123 </span><strong>by clue team.</strong>
+                    </a>
+                </td>
+                <td>
+                    11:14 AM
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    var inboxCheckboxes = document.querySelectorAll(".inbox-checkbox")
+    var inboxStars = document.querySelectorAll(".inbox-star")
+
+    inboxCheckboxes.forEach(function (item) {
+        item.addEventListener("click", toggle)
+        item.active = false
+    })
+
+    inboxStars.forEach(function (item) {
+        item.addEventListener("click", toggle)
+        item.active = false
+    })
+
+    function toggle() {
+        if (this.active) {
+            this.classList.remove("active")
+        } else {
+            this.classList.add("active")
+        }
+
+        this.active = !this.active
+    }
+</script>
+
+</html>
