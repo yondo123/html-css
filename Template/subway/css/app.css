@@ -45,8 +45,8 @@ body {
     /* header */
     .header > .info-section {
         position: absolute;
+        right: 16.666666%;
         top: 44px;
-        right: 8.333333%;
         font-size: 12px;
     }
 
@@ -90,7 +90,6 @@ body {
     main {
         margin: 0 auto;
     }
-
     .menu-section,
     .menu-image-section,
     .event-section,
@@ -161,27 +160,72 @@ body {
     .menu-section {
         margin-top: 40px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .menu-section > h2 {
         font-size: 40px;
         font-weight: bold;
+        margin-bottom: 33px;
+        position: relative;
+    }
+
+    .bul-tit {
+        display: inline-block;
+        width: 50px;
+        position: absolute;
+        z-index: -2;
+        bottom: -12px;
+        left: -10px;
     }
 
     .menu-section > .menu-list {
         display: flex;
+        margin-right: 1.5%;
         font-size: 16px;
         font-weight: 600;
     }
 
     .menu-section > .menu-list > li {
+        color: #666666;
+        position: relative;
         cursor: pointer;
         padding: 24px;
+    }
+
+    .menu-section li:not(:nth-child(1)):after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 1px;
+        height: 15px;
+        background-color: #999999;
     }
 
     .menu-image-section > ul {
         display: flex;
         justify-content: space-around;
+    }
+
+    .menu-image-section li:not(:nth-child(1)) {
+        margin-left: 30px;
+    }
+
+    .menu-image-section li {
+        width: 260px;
+        text-align: center;
+    }
+
+    .menu-image-section dt {
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 3px 0 10px 0;
+    }
+
+    .menu-image-section dd {
+        color: #999999;
+        font-size: 13px;
+        line-height: 21px;
     }
 
     .menu-image-section img {
