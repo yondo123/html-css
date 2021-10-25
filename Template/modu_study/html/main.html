@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/layout.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="wrap md:grid md:grid-cols-12">
+            <div class="left-wrap md:col-span-3 lg:col-span-2 xl:col-span-2">
+                <header>
+                    <h2>
+                        <a href="#">modu study</a>
+                    </h2>
+                    <button class="menu-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-menu-2"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#1dd1a1"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" x-show="!open" />
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </button>
+                    <button class="close-button hide">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-chevrons-up"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#1dd1a1"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" x-show="open" />
+                            <polyline points="7 11 12 6 17 11" />
+                            <polyline points="7 17 12 12 17 17" />
+                        </svg>
+                    </button>
+                </header>
+                <nav class="">
+                    <ul>
+                        <li class="selected-menu">
+                            <a href="#">게시판 Sample</a>
+                        </li>
+                        <li>
+                            <a href="#">게시판 Sample</a>
+                        </li>
+                        <li>
+                            <a href="#">게시판 Sample</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-wrap md:col-span=10 lg:col-span-9 xl:col-span-10"></div>
+        </div>
+    </body>
+</html>
