@@ -3,6 +3,7 @@
 :root {
     --border-color: #c8d6e5;
     --font-color: #2c3a47;
+    --sub-font-color: #7f8fa6;
     --main-color: #1dd1a1;
     --hover-color: #76d6bc;
 }
@@ -162,21 +163,21 @@ main {
 
 .post > .post-info {
     display: flex;
-    position: relative;
     font-size: 1.2rem;
 }
 
-.post-writer {
-    position: absolute;
-    left: 0;
-    top: 0;
+.post-writer::after {
+    content: '\007C';
+    margin-left: 0.5rem;
 }
 
 .post-date {
     width: 100%;
-    position: absolute;
-    left: 7rem;
-    top: 0;
+    margin-left: 0.5rem;
+}
+
+.sub-font {
+    color: var(--sub-font-color);
 }
 
 /* tablet */
