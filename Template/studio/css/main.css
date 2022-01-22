@@ -1,0 +1,41 @@
+/* The copyright of this work belongs to yondo123@gmail.com. */
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    height: 100%;
+}
+
+img {
+    max-height: 720px;
+    pointer-events: none;
+}
+
+/* 슬라이드 사진 */
+.background {
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-01 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/main01.jpeg);
+}
+
+.background-02 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/main02.jpeg);
+}
+
+.background-03 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/main03.jpeg);
+}
