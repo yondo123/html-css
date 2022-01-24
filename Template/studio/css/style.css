@@ -10,6 +10,7 @@
     --accent-color: #d9c2ad;
     /* font-size */
     --sm-font: 0.8rem;
+    --rg-font: 1rem;
     --md-font: 1.2rem;
     --lg-font: 1.6rem;
     --xl-font: 1.8rem;
@@ -156,6 +157,10 @@ button {
     cursor: pointer;
 }
 
+.hide {
+    display: none !important;
+}
+
 .selected {
     color: var(--accent-color) !important;
 }
@@ -163,7 +168,6 @@ button {
 .xlbtn {
     font-size: var(--md-font);
     padding: 0.4rem 0.8rem;
-    margin-right: 1.4rem;
     background-color: var(--main-color);
     color: #fff;
     border-radius: 12px;
@@ -195,7 +199,6 @@ button {
 .smbtn {
     font-size: var(--sm-font);
     padding: 0.3rem 0.6rem;
-    margin-right: 1.4rem;
     background-color: var(--main-color);
     color: #fff;
     border-radius: 12px;
@@ -206,4 +209,21 @@ button {
     background-color: var(--accent-color);
     transition: background-color, 750ms;
     cursor: pointer;
+}
+
+.mailsep {
+    margin: 0 0.4rem;
+}
+
+/* font-style */
+.h2 {
+    color: var(--font-color);
+    font-size: var(--lg-font);
+    font-weight: 700;
+}
+
+.h3 {
+    color: var(--font-color);
+    font-size: var(--rg-font);
+    font-weight: 700;
 }
