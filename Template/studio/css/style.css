@@ -227,3 +227,12 @@ button {
     font-size: var(--rg-font);
     font-weight: 700;
 }
+
+.sm {
+    color: var(--font-color);
+    font-size: var(--sm-font);
+}
+
+.sub {
+    color: var(--sub-font-color);
+}
