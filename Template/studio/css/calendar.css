@@ -1,0 +1,58 @@
+/* The copyright of this work belongs to yondo123@gmail.com. */
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    max-width: 1280px;
+    min-height: 800px;
+    margin: 2.4rem 0;
+    margin-left: 20rem;
+    padding: 0 1.2rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.8rem;
+    color: var(--font-color);
+}
+
+.menu a,
+.title {
+    color: var(--font-color);
+}
+
+#calendar {
+    padding: 1.2rem 0;
+}
+
+#calendar button {
+    font-size: var(--sm-font);
+    background-color: var(--main-color);
+    border-style: none;
+    border-radius: 1rem;
+    color: #fff;
+    margin-left: 0.4rem;
+}
+
+#calendar button:hover {
+    background-color: var(--accent-color);
+    transition: background-color, 750ms;
+    cursor: pointer;
+}
+
+.calendar-header {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fc .fc-prevMonth-button,
+.fc .fc-nextMonth-button {
+    font-size: 18px;
+}
