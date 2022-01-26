@@ -2,11 +2,6 @@
 @import url(../css/header.css);
 @import url(../css/footer.css);
 
-.menu a,
-.title {
-    color: var(--font-color);
-}
-
 body {
     overflow-x: hidden;
     background-color: #fff;
@@ -26,8 +21,9 @@ main {
     color: var(--font-color);
 }
 
-.post {
-    margin-top: 2.4rem;
+.menu a,
+.title {
+    color: var(--font-color);
 }
 
 .post-header {
@@ -37,55 +33,94 @@ main {
     align-items: center;
 }
 
-.post-title {
-    width: 30rem;
-}
-
-.post-item {
+.post {
     margin-top: 1.2rem;
-    display: flex;
-    align-items: center;
 }
 
-.email-item {
-    margin-top: 1.2rem;
-    display: flex;
-    align-items: center;
-}
-
-.notice-item {
-    margin-top: 0.4rem;
-}
-
-.notice-text {
-    font-size: var(--rg-font);
-    margin: 0.4rem;
-}
-
-.mailsep {
+.highlight {
     color: var(--sub-font-color);
-    font-size: var(--rg-font);
 }
 
-.select-email {
-    margin-left: 0.8rem;
+.post-content {
+    margin: 2.4rem 0;
+}
+.post-info {
+    display: flex;
 }
 
-.left {
-    min-width: 6rem;
+.post-info div:first-child {
+    margin-right: 1.4rem;
 }
 
-#notice {
-    font-size: var(--sm-font);
-    padding: 0.4rem;
-    resize: none;
-    background-color: #fff;
+.post-info dt {
+    margin-right: 0.2rem;
 }
 
-.post-buttons {
+.post-info dt,
+dd {
+    display: inline;
+}
+
+.writer,
+.date {
+    min-width: 4rem;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.4rem 0;
+}
+
+.content-header {
+    margin-top: 2.4rem;
+}
+
+.content {
+    margin-top: 0.8rem;
+}
+
+.comment {
+    padding: 0.8rem;
     margin: 1.2rem 0;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.8rem;
 }
 
-.post-buttons button:first-child {
-    margin-right: 0.4rem;
+.comment-notice {
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.auth-field,
+.comment-field {
+    margin-left: 1.2rem;
+}
+
+.comment-write {
+    margin-top: 0.8rem;
+}
+.comment-write textarea {
+    padding: 0.8rem;
+    resize: none;
+    width: 100%;
+    height: 6rem;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+/* 댓글리스트 */
+.comment-list {
+    margin-top: 1.2rem;
+}
+
+.comment-list li {
+    background-color: #dfe6e9;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon,
+.comment-writer {
+    margin-right: 0.8rem;
 }
