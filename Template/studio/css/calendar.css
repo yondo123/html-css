@@ -56,3 +56,31 @@ main {
 .fc .fc-nextMonth-button {
     font-size: 18px;
 }
+
+/* 일정 팝업 */
+.calendar-button-wrap,
+.calendar-input-wrap {
+    margin-top: 1.2rem;
+}
+
+.calendar-button-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calendar-button-wrap button:first-child {
+    margin-right: 0.4rem;
+}
+
+.calendar-event-title {
+    width: 20rem;
+}
+.calendar-input-item {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.calendar-input-item span {
+    min-width: 4rem;
+}
