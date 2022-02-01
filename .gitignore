@@ -1,5 +1,10 @@
 /whatTodo_front
 /temp
+/library
 *assets
 *js
+*eoc
+*ttf
+*woff
+*woff2
 .vscode
