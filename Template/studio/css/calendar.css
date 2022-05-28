@@ -68,7 +68,7 @@ main {
     justify-content: flex-end;
 }
 
-.calendar-button-wrap button:first-child {
+.calendar-button-wrap button:not(last-child) {
     margin-right: 0.4rem;
 }
 
