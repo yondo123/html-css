@@ -1,3 +1,24 @@
+body {
+    background-color: var(--main-color);
+    margin: 0 auto;
+    max-width: 960px;
+    width: 90%;
+}
+
+.title {
+    text-align: center;
+    color: var(--font-color);
+    font-size: var(--xl-font);
+}
+
+.flag-wrap {
+    display: flex;
+}
+
+.flag-image {
+    width: 100%;
+}
+
 .draw-button {
     height: 80px;
     line-height: 80px;
@@ -5,11 +26,12 @@
     font-size: 2em;
     font-weight: bold;
     border-radius: 50%;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     text-align: center;
     cursor: pointer;
 }
+
 table,
 th,
 td {

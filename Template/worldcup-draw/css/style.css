@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&display=swap');
 
 :root {
     /* color */
     --border-color: #c8d6e5;
-    --font-color: #141a20;
-    --sub-font-color: #7f8fa6;
-    --main-color: #887f78;
-    --accent-color: #d9c2ad;
+    --font-color: #fff;
+    --sub-font-color: #FC427B;
+    --main-color: #CB0D45;
+    --accent-color: #F8EFBA;
     /* font-size */
     --sm-font: 0.8rem;
     --rg-font: 1rem;
@@ -16,6 +16,7 @@
 }
 
 html {
+    font-family: 'Montserrat', sans-serif;
     font-size: 10px;
 }
 
@@ -165,4 +166,24 @@ button {
 
 .hide {
     display: none !important;
+}
+
+.mt-10 {
+    margin-top: 1rem;
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+.pd-all-10{
+    padding: 1rem;
+}
+
+.pd-both-10 {
+    padding: 0 1rem;
+}
+
+.pd-ud-10{
+    padding: 1rem 0;
 }
