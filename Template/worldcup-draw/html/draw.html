@@ -25,13 +25,13 @@
                     <img src="../images/GY.gif" width="120" height="80" alt="Natural" />
                 </div>
                 <div class="flag-image">
-                    <img src="../images/CN.gif" width="120" height="80" alt="Natural" />
+                    <img src="../images/AU.gif" width="120" height="80" alt="Natural" />
                 </div>
                 <div class="flag-image">
-                    <img src="../images/AD.gif" width="120" height="80" alt="Natural" />
+                    <img src="../images/ZM.gif" width="120" height="80" alt="Natural" />
                 </div>
                 <div class="flag-image">
-                    <img src="../images/AD.gif" width="120" height="80" alt="Natural" />
+                    <img src="../images/US.gif" width="120" height="80" alt="Natural" />
                 </div>
                 <div class="flag-image">
                     <img src="../images/AD.gif" width="120" height="80" alt="Natural" />
@@ -48,29 +48,35 @@
             </div>
         </marquee>
     </header>
-    <main>
-        <section class="editor-wrap">
+    <main class="mt-20">
+        <section class="editor-box mt-10">
             <h1 class="hide">Select Country</h1>
-            <div class="editor-item">
-                <label for="continent">대륙 선택</label>
-                <select name="recvDay" id="continent">
-                    <option value="uefa">UEFA</option>
-                    <option value="afc">AFC</option>
-                </select>
-            </div>
-            <div class="editor-item">
-                <label for="country">국가 선택</label>
-                <select name="recvDay" id="country">
-                    <option value="kor">대한민국</option>
-                    <option value="ita">이탈리아</option>
-                </select>
+            <div class="editor-wrap">
+                <div class="editor-item">
+                    <div class="label">
+                        <label for="continent" class="h2">Continent</label>
+                    </div>
+                    <select id="continent">
+                        <option value="uefa">UEFA</option>
+                        <option value="afc">AFC</option>
+                    </select>
+                </div>
+                <div class="editor-item">
+                    <div class="label">
+                        <label for="country" class="h2">Team</label>
+                    </div>
+                    <select id="country">
+                        <option value="kor">대한민국</option>
+                        <option value="ita">이탈리아</option>
+                    </select>
+                </div>
             </div>
             <div class="editor-item">
                 <button type="button">포트추가</button>
             </div>
         </section>
-        <section class="draw-wrap">
-            <h1>Draw</h1>
+        <section class="draw-wrap mt-10">
+            <h1 class="h2">Draw</h1>
             <div class="draw-buttons">
                 <div class="draw-button">&#43;</div>
                 <div class="draw-button">&#43;</div>
@@ -83,7 +89,7 @@
             </div>
         </section>
         <section class="group-table-list">
-            <h1>Results</h1>
+            <h1 class="h2">Results</h1>
             <table class="group-table">
                 <thead>
                     <tr>
