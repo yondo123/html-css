@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../common/normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../common/ui.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+</head>
+
+<body>
+    <header>
+        <h1>✅ Todo List</h1>
+    </header>
+    <main>
+        <section>
+            <label for="todo-item"></label>
+            <input type="text" id="todo-item" placeholder="새로운 할 일을 입력해주세요.">
+            <button type="button">추가</button>
+        </section>
+        <section>
+            <ul>
+                <li class="static">
+                    <p>밥먹기</p>
+                    <button type="button">수정</button>
+                    <button type="button">삭제</button>
+                </li>
+                <li class="edit">
+                    <input type="text" class="edit-item" value="공부하기">
+                    <button type="button">제출</button>
+                    <button type="button">취소</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
