@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CLAIR DE STUDIO </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/jquery.datetimepicker.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/fullcalendar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/calendar.css'>
+    <script src='../assets/js/jquery-3.6.0.js'></script>
+    <script src="../assets/js/jquery-datetimepicker.js"></script>
+    <script src="../assets/js/fullcalendar.js"></script>
+    <script src="../assets/js/locales-all.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="../js/common/constants.js"></script>
+    <script src="../js/common/util.js"></script>
+    <script src="../js/calendar.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#" rel="noopener noreferrer" class="title">CLAIR DE STUDIO</a></h1>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#" rel="noopener noreferrer">스튜디오 소개</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">이용안내</a>
+                <li>
+                    <a href="#" rel="noopener noreferrer">위치안내</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">예약하기</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer" class="selected">스케쥴</a>
+                </li>
+                <li>
+                    <a class="insta-link link" href="http://instgram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab xl fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="facebook-link link" href="http://instgram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="calendar-wrap">
+            <div class="calendar-header">
+                <h1 class="h2">스케쥴</h1>
+            </div>
+            <div id='calendar'></div>
+        </div>
+        <div class="calendar-popup popup" id="popup">
+            <div class="content">
+                <h2 class="h2">새로운 일정</h2>
+                <div class="calendar-input-wrap">
+                    <h3 class="h3 calendar-input-item"><span>일정 </span><input class="sminpt calendar-event-title"
+                            id="eventName" type="text" maxlength="13"></h3>
+                    <h3 class="h3 calendar-input-item"><span>시작일 </span><input class="datetimepicker sminpt"
+                            id="startDate" type="text">
+                    </h3>
+                    <h3 class="h3 calendar-input-item"><span>종료일 </span><input class="datetimepicker sminpt"
+                            id="endDate" type="text">
+                    </h3>
+                </div>
+                <div class="calendar-button-wrap">
+                    <button type="button" id="btnAddScehdule" class="btnPopup smbtn">추가</button>
+                    <button type="button" id="btnRemoveScehdule" class="btnPopup smbtn">삭제</button>
+                    <button type="button" id="btnCloseScehdule" class="btnPopup smbtn">닫기</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <span>010-1234-1234</span>
+                    <span>평일 오전 9시 - 오후 10시</span>
+                    <span>CONTACT: yondo123@naver.com</span>
+                </div>
+                <div class="footer-right">
+                    <span>Copyright 2022. CLAIR DE STUDIO</span>
+                    <span>owner : Jabin Lee</span>
+                    <span>address : 서울시 마포구 포은로14, 수성빌딩 401호 (합정동 393-18)</span>
+                    <a href="#"><span>관리자 사이트</span></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

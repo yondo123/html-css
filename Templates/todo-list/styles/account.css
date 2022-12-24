@@ -1,0 +1,61 @@
+@import url('./common.css');
+body {
+    width: 320px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    color: var(--font-color);
+}
+
+header {
+    text-align: center;
+    padding-top: 30%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main input {
+    border: 1px solid #ededed;
+    padding: 4px 8px;
+}
+
+.input-wrap {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.input-area .marker {
+    text-align: center;
+}
+
+.notice {
+    color: var(--accent-color);
+}
+
+button {
+    width: 120px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 24px;
+    margin-top: 24px;
+    transition: background-color 200ms ease-in-out;
+}
+
+button:hover {
+    background-color: var(--sub-color);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../common/normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../common/ui.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/todo.css'>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-lg">✅ Todo List</h1>
+    </header>
+    <main>
+        <h1 class="hide">todo-list</h1>
+        <section class="add-wrap">
+            <label for="todo-item" class="hide"></label>
+            <input type="text" id="todo-item" placeholder="새로운 할 일을 입력해주세요." maxlength="20">
+            <button type="button" class="text-md">추가</button>
+        </section>
+        <section class="list-wrap">
+            <ul>
+                <li class="list-item">
+                    <input type="checkbox" name="" id="">
+                    <span class="text-md">밥먹기</span>
+                    <button type="button" class="text-md btn-edit">수정</button>
+                    <button type="button" class="text-md btn-remove">삭제</button>
+                </li>
+                <li class="list-item">
+                    <input type="checkbox" name="" id="">
+                    <span class="text-md">밥먹기</span>
+                    <button type="button" class="text-md btn-edit">수정</button>
+                    <button type="button" class="text-md btn-remove">삭제</button>
+                </li>
+                <li class="list-item">
+                    <input type="checkbox" name="" id="">
+                    <span class="text-md">밥먹기밥먹기밥먹기밥먹기밥먹기밥먹기</span>
+                    <button type="button" class="text-md btn-edit">수정</button>
+                    <button type="button" class="text-md btn-remove">삭제</button>
+                </li>
+                <li class="list-item edit">
+                    <input type="text" class="edit-item" value="공부하기" maxlength="20">
+                    <button type="button" class="text-md btn-submit">제출</button>
+                    <button type="button" class="text-md btn-cancel">취소</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+/* The copyright of this work belongs to yondo123@gmail.com. */
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    max-width: 1280px;
+    min-height: 800px;
+    margin: 2.4rem 0;
+    margin-left: 20rem;
+    padding: 0 1.2rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.8rem;
+    color: var(--font-color);
+}
+
+.menu a,
+.title {
+    color: var(--font-color);
+}
+
+.post {
+    margin-top: 2.4rem;
+}
+
+.post-header {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title {
+    width: 30rem;
+}
+
+.post-item {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.email-item {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.notice-item {
+    margin-top: 0.4rem;
+}
+
+.notice-text {
+    font-size: var(--rg-font);
+    margin: 0.4rem;
+}
+
+.mailsep {
+    color: var(--sub-font-color);
+    font-size: var(--rg-font);
+}
+
+.select-email {
+    margin-left: 0.8rem;
+}
+
+.left {
+    min-width: 6rem;
+}
+
+#notice {
+    font-size: var(--sm-font);
+    padding: 0.4rem;
+    resize: none;
+    background-color: #fff;
+}
+
+.post-buttons {
+    margin: 1.2rem 0;
+}
+
+.post-buttons button:first-child {
+    margin-right: 0.4rem;
+}

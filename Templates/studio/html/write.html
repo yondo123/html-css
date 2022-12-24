@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CLAIR DE STUDIO </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/write.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/summernote.css'>
+    <script src='../assets/js/jquery-3.6.0.js'></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="../assets/js/summernote-lite.js"></script>
+    <script src="../assets/js/summernote-ko-KR.js"></script>
+    <script src="../js/common/constants.js"></script>
+    <script src="../js/common/util.js"></script>
+    <script src="../js/write.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#" rel="noopener noreferrer" class="title">CLAIR DE STUDIO</a></h1>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#" rel="noopener noreferrer">스튜디오 소개</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">이용안내</a>
+                <li>
+                    <a href="#" rel="noopener noreferrer">위치안내</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer" class="selected">예약하기</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">스케쥴</a>
+                </li>
+                <li>
+                    <a class="insta-link link" href="http://instgram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab xl fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="facebook-link link" href="http://instgram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="post-header">
+            <h1 class="h2">예약하기</h1>
+        </div>
+        <div class="post">
+            <dl class="input-feilds">
+                <div class="post-item">
+                    <div class="left">
+                        <span class="h3 post-title">제목</span>
+                    </div>
+                    <div class="right">
+                        <input type="text" class="sminpt post-title" id="inpTitle" placeholder="제목을 입력해주세요."
+                            maxlength="50">
+                        <label for="title" class="hide">글쓰기 제목</label>
+                    </div>
+                </div>
+                <div class="post-item">
+                    <div class="left">
+                        <span class="h3">작성자</span>
+                    </div>
+                    <div class="right">
+                        <input type="text" class="sminpt" id="inpWriter" maxlength="10">
+                        <label for="title" class="hide">작성자</label>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <div class="left">
+                        <span class="h3">이메일</span>
+                    </div>
+                    <div class="input-email">
+                        <input type="text" class="sminpt" id="fisrtAddress" maxlength="20">
+                        <span class="mailsep">&#64;</span>
+                        <input type="text" class="sminpt" id="lastAddress" maxlength="50">
+                    </div>
+                    <div class="select-email">
+                        <select id="sltEmail" class="smslt">
+                            <option value="">메일선택</option>
+                            <option value="nv">naver&#46;com</option>
+                            <option value="gl">gmail.com</option>
+                            <option value="hm">hanmail&#46;net</option>
+                        </select>
+                        <label for="sltEmail" class="hide">이메일 선택</label>
+                    </div>
+                </div>
+                <div class="post-item">
+                    <div class="left">
+                        <span class="h3">비밀번호</span>
+                    </div>
+                    <div class="right">
+                        <input type="password" class="sminpt" id="inpPassword" maxlength="8" placeholder="최대 4~8자 입력가능"/>
+                        <label for="title" class="hide">비밀번호</label>
+                    </div>
+                </div>
+                <div class="post-item">
+                    <div class="left">
+                        <span class="h3">내용</span>
+                    </div>
+                    <div class="right">
+                        <div id="summernote">
+                            CLAIR DE STUDIO 예약 게시판입니다.<br>
+                            예약시 스케쥴 메뉴에서 예약 가능 시간을 확인해주시고 접수를 진행해주세요.<br>
+                            예약 양식은 다음과 같습니다.<br><br>
+                            1. 예약자 성함 : <br><br>
+                            2. 입금자 성함 : <br><br>
+                            3. 연 락 처 :<br><br>
+                            4. 예 약 날 짜 (예 : 2022년 1월 1일) : <br><br>
+                            5. 촬 영 시 간 (예 : 오후2시 ~ 오후3시) : <br><br>
+                            6. 촬 영 인 원 : <br><br>
+                            7. 사 용 목 적 : <br><br>
+                            8. 요 청 사 항 : <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item">
+                    <div class="left">
+                        <span class="h3">공개여부</span>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="post-type" value="public" id="public" checked />
+                        <label for="public">공개글</label>
+                        <input type="radio" name="post-type" value="private" id="private">
+                        <label for="private">비밀글</label>
+                    </div>
+                </div>
+                <!-- <div class="">
+                    <h2>보안문자 필드</h2>
+                </div> -->
+                <div class="post-item">
+                    <div class="left"><span class="h3">개인정보<br />수집동의</span></div>
+                    <div class="notice-item">
+                        <textarea id="notice" cols="100" rows="10" disabled>&#10;1&#46;개인정보의 수집항목&#10;- CLAIR DE STUDIO는 홈페이지 회원 가입 시 회원 서비스 제공에 필요한 최소한의 정보를 수집하고 있으며 개인정보파일에 수집되는 항목은 다음과 같습니다.&#10;- 이름, 아이디, 이메일&#10;&#10;2&#46;개인정보 수집목적&#10;- 서비스제공 및 계약 이행 및 서비스의 원활한 운영 목적을 위함&#10;&#10;3&#46;개인정보 보유 및 이용기간&#10;- 개인정보 수집 및 이용목적을 달성한 후에는 해당 정보를 모두 파기합니다. 최대 보유기간은 2년 입니다.
+                                                                    </textarea>
+                        <div class="notice-text">위 항목의 개인정보 수집 및 이용에 동의하십니까?</div>
+                        <input type="radio" name="post-agree" value="subon" id="consent">
+                        <label for="consent">동의</label>
+                        <input type="radio" name="post-agree" value="suboff" id="disagree">
+                        <label for="disagree">동의안함</label>
+                    </div>
+                </div>
+            </dl>
+            <div class="post-buttons">
+                <button class="xlbtn" type="button" id="btnWrite">글쓰기</button>
+                <button class="xlbtn" type="button" id="btnCancel">취소</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <span>010-1234-1234</span>
+                    <span>평일 오전 9시 - 오후 10시</span>
+                    <span>CONTACT: yondo123@naver.com</span>
+                </div>
+                <div class="footer-right">
+                    <span>Copyright 2022. CLAIR DE STUDIO</span>
+                    <span>owner : Jabin Lee</span>
+                    <span>address : 경기 안산시 상록구 본오동</span>
+                    <a href="#"><span>관리자 사이트</span></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

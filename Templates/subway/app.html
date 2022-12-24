@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>subway-clone</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/app.css" />
+    </head>
+    <body class="grid grid-cols-12 grid-rows-12 h-full">
+        <header class="header col-span-12 row-span-1">
+            <h1 class="hide">SUBWAY</h1>
+            <img src="../subway/img/subway_title.png" alt="subway-title" />
+            <section class="info-section">
+                <ul class="info-list">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </section>
+            <nav class="nav">
+                <ul>
+                    <li><strong>메뉴소개</strong></li>
+                    <li><strong class="select">이용방법</strong></li>
+                    <li><strong>새소식</strong></li>
+                    <li><strong>써브웨이</strong></li>
+                    <li><strong>가맹점</strong></li>
+                    <li><strong>온라인 주문</strong></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="col-span-12 row-span-4">
+            <section class="banner-section">
+                <div class="button-wrap">
+                    <div class="search-button">
+                        <a href="#">매장찾기</a>
+                    </div>
+                    <div class="partner-button">
+                        <a href="#">가맹신청 및 문의</a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href=""><img src="./img/subway_banner.png" alt="banner#1" /></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-section">
+                <h2><img src="./img/bul_tit.png" class="bul-tit" />Subway's Menu</h2>
+                <ul class="menu-list">
+                    <li class="selected">에그마요</li>
+                    <li>프레쉬&라이트</li>
+                    <li>프리미엄</li>
+                    <li>아침메뉴</li>
+                </ul>
+            </section>
+            <section class="menu-image-section">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/sandwich_cl01.jpeg" alt="eggmayo" />
+                            <dl>
+                                <dt>에그마요</dt>
+                                <dd>
+                                    부드러운 달걀과 고소한 마요네즈가 만나<br />
+                                    더 부드러운 스테디셀러
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/sandwich_cl02.jpeg" alt="eggmayo" />
+                            <dl>
+                                <dt>베이컨 매니아</dt>
+                                <dd>세상에서 제일 맛있는 베이컨 매니아들을 위한 <br />특별한 써브웨이만의 샌드위치</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/sandwich_cl04.jpeg" alt="italicbmt" />
+                            <dl>
+                                <dt>이탈리안 비엠티</dt>
+                                <dd>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! 전세계가 사랑하는 써브웨이의 베스트셀러! Biggest Meatiest Tastiest, its’ B.M.T!</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/sandwich_fl06.jpeg" alt="meatball" />
+                            <dl>
+                                <dt>미트볼</dt>
+                                <dd>이탈리안 스타일 비프 미트볼에<br />써브웨이만의 풍부한 토마토 향이 살아있는<br />마리나라소스를 듬뿍</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="event-section">
+                <div class="event-wrap">
+                    <div class="guide">
+                        <h2>써브웨이를 제대로 즐기는 방법</h2>
+                        <a href="#"><span>이용방법</span></a>
+                    </div>
+                    <div class="history">
+                        <h2>50년 역사를 가진 No.1 프랜차이자의 성장기</h2>
+                        <a href="#"><span>서브웨이 역사</span></a>
+                    </div>
+                </div>
+                <div class="notice-wrap">
+                    <section class="notice-section">
+                        <h2>What's New</h2>
+                        <p>써브웨이의 다양한 소식을 빠르게 전달드립니다.</p>
+                        <ol>
+                            <li>
+                                <a href="#">
+                                    <span>로스트 치킨, 로티세리 바비큐 치킨 일시 판매 중단 안내</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>써브웨이 고객센터 2021년 추석연휴 휴무 안내</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>2021년 추석 당일 매장운영 안내</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer class="col-span-12 row-span-1">
+            <ul>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#"><strong>개인정보처리방침</strong></a>
+                </li>
+                <li>
+                    <a href="#">써브카드</a>
+                </li>
+                <li>
+                    <a href="#">점주관리자</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
