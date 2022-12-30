@@ -41,11 +41,21 @@ header h1 {
 .filter .select-wrap select {
     width: 128px;
     border: 1px solid var(--border-color);
-    border-radius: 11px;
+    border-radius: 12px;
     padding: 4px 24px;
     background: url('../assets/chevron.png') no-repeat 95% 50%;
     appearance: none;
     -webkit-appearance: none;
+}
+
+.btn-add {
+    width: 100%;
+    font-size: 26px;
+    margin-top: 24px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 /* output buttons */
