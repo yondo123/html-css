@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <title>form</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <style>
+        body {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 120px 0;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, button {
+            color: #2c3a47;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="get">
+    <section class="profile">
+        <h1>기본 사항</h1>
+        <label for="name">이름</label>
+        <input placeholder="이름을 입력하세요." type="text" maxlength="10" minlength="2" id="name"/>
+        <label for="phone">전화번호</label>
+        <input placeholder="전화번호를 입력하세요." type="tel" maxlength="13" minlength="10" id="phone"/>
+        <label for="email">이메일</label>
+        <input placeholder="이메일을 적어주세요." type="email" id="email">
+        <label for="url">홈페이지</label>
+        <input placeholder="홈페이지 주소를 적어주세요." type="url" id="url">
+        <label for="image-file">사용자 이미지 선택</label>
+        <input placeholder="사진을 선택하세요." type="file" id="image-file" accept=".png, .jpg">
+        <label for="age">나이</label>
+        <input placeholder="나이를 입력해주세요." type="number" max="99" id="age">
+    </section>
+    <section>
+        <h1>선택 사항</h1>
+        <h3>가입 경로를 선택해주세요.</h3>
+        <input type="radio" name="motivation" value="recommended" id="recommended"/>
+        <label for="recommended">지인 추천</label>
+        <input type="radio" name="motivation" value="sns" id="sns"/>
+        <label for="sns">sns</label>
+        <input type="radio" name="motivation" value="etc" id="etc"/>
+        <label for="etc">기타</label>
+    </section>
+    <section>
+        <h1>배우고 싶은 것</h1>
+        <h3>앞으로 배우고 싶은 기술을 선택해주세요.</h3>
+        <input type="checkbox" name="language" value="javascript" id="javascript">
+        <label for="javascript">자바스크립트</label>
+        <input type="checkbox" name="language" value="typescript" id="typescript">
+        <label for="typescript">타입스크립트</label>
+        <input type="checkbox" name="language" value="react" id="react">
+        <label for="react">리액트</label>
+        <input type="checkbox" name="language" value="svelte" id="svelte">
+        <label for="svelte">스벨트</label>
+        <input type="checkbox" name="language" value="vue" id="vue">
+        <label for="vue">VueJS</label>
+        <input type="checkbox" name="language" value="angular" id="angular">
+        <label for="angular">앵귤러</label>
+    </section>
+    <section>
+        <h1>방문 요일</h1>
+        <select name="checkin" multiple="multiple">
+            <option value="mon">월요일</option>
+            <option value="tue">화요일</option>
+            <option value="wed">수요일</option>
+            <option value="thu">목요일</option>
+            <option value="sat">금요일</option>
+            <option value="sun">토요일</option>
+        </select>
+    </section>
+
+    <section>
+        <h1>자기 소개</h1>
+        <textarea name="introduce-self" id="" cols="30" rows="10"></textarea>
+    </section>
+
+    <button type="submit">제출</button>
+</form>
+</body>
+</html>
