@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        @import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            letter-spacing: -0.03em;
+        }
+
+        html {
+            font-family: "SpoqaHanSans";
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1f2d3d;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            white-space: nowrap;
+            vertical-align: center;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        th {
+            padding: 4px 12px;
+        }
+
+        td {
+            padding: 12px 24px;
+            font-size: 12px;
+        }
+
+        thead {
+            background-color: #000;
+            color: #fff;
+        }
+
+        tbody th {
+            background-color: #1f2d3d;
+            color: #fff;
+        }
+
+        tbody th[colspan="6"] {
+            padding: 10px;
+            padding-left: 55px;
+            background-color: #f9fafc;
+            color: #1f2d3d;
+        }
+
+        td.lab {
+            color: #1fb6ff;
+        }
+
+        td.play {
+            color: #ffc82c;
+        }
+
+        td.nignt {
+            color: #592dea;
+        }
+
+        td.study {
+            color: #ff16d1;
+        }
+
+        td.mentoring {
+            color: #ff5216;
+        }
+
+        td.exercise {
+            color: #13ce66;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">월</th>
+            <th scope="col">화</th>
+            <th scope="col">수</th>
+            <th scope="col">목</th>
+            <th scope="col">금</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">00:00</th>
+            <td rowspan="9" colspan="1" class="nignt">취침 🌙</td>
+            <td rowspan="10" colspan="1" class="nignt">취침 🌙</td>
+            <td rowspan="9" colspan="1" class="nignt">취침 🌙</td>
+            <td rowspan="10" colspan="1" class="nignt">취침 🌙</td>
+            <td rowspan="9" colspan="1" class="nignt">취침 🌙</td>
+        </tr>
+        <tr>
+            <th scope="row">01:00</th>
+        </tr>
+        <tr>
+            <th scope="row">02:00</th>
+        </tr>
+        <tr>
+            <th scope="row">03:00</th>
+        </tr>
+        <tr>
+            <th scope="row">04:00</th>
+        </tr>
+        <tr>
+            <th scope="row">05:00</th>
+        </tr>
+        <tr>
+            <th scope="row">06:00</th>
+        </tr>
+        <tr>
+            <th scope="row">07:00</th>
+        </tr>
+        <tr>
+            <th scope="row">08:00</th>
+        <tr>
+            <th scope="row">09:00</th>
+            <td rowspan="2" class="study">알고리즘 풀기</td>
+            <td rowspan="2" class="study">알고리즘 풀기</td>
+            <td rowspan="2" class="study">알고리즘 풀기</td>
+        </tr>
+        <tr>
+            <th scope="row">10:00</th>
+            <td rowspan="2" class="study">알고리즘 풀기</td>
+            <td rowspan="2" class="study">알고리즘 풀기</td>
+        </tr>
+        <tr>
+            <th scope="row">11:00</th>
+            <td rowspan="2" class="exercise">운동</td>
+            <td rowspan="2" class="exercise">운동</td>
+            <td rowspan="2" class="exercise">운동</td>
+        </tr>
+        <tr>
+            <th scope="row">12:00</th>
+            <td rowspan="1" class="play">점심 및 나갈 준비</td>
+            <td rowspan="1" class="play">점심 및 나갈 준비</td>
+        </tr>
+        <tr>
+            <th scope="row">13:00</th>
+            <td rowspan="1" class="play">점심 및 휴식</td>
+            <td rowspan="1" class="play">강남 이동</td>
+            <td rowspan="1" class="play">점심 및 휴식</td>
+            <td rowspan="1" class="play">강남 이동</td>
+            <td rowspan="1" class="play">점심 및 휴식</td>
+        </tr>
+        <tr>
+            <th scope="row">14:00</th>
+            <td rowspan="6" class="study">공부..🤦‍️</td>
+            <td rowspan="7" class="lab">F-Lab 모각코</td>
+            <td rowspan="6" class="study">공부..🤦‍️</td>
+            <td rowspan="7" class="lab">F-Lab 모각코</td>
+            <td rowspan="6" class="study">공부..🤦‍️</td>
+        </tr>
+        <tr>
+            <th scope="row">15:00</th>
+        </tr>
+        <tr>
+            <th scope="row">16:00</th>
+        </tr>
+        <tr>
+            <th scope="row">17:00</th>
+        </tr>
+        <tr>
+            <th scope="row">18:00</th>
+        </tr>
+        <tr>
+            <th scope="row">19:00</th>
+        </tr>
+        <tr>
+            <th scope="row">20:00</th>
+            <td rowspan="1" class="play">저녁 및 휴식</td>
+            <td rowspan="1" class="play">저녁 및 휴식</td>
+            <td rowspan="1" class="play">저녁 및 휴식</td>
+        </tr>
+        <tr>
+            <th scope="row">21:00</th>
+            <td rowspan="3" class="study">공부..🤦‍️</td>
+            <td rowspan="1" class="play">집으로 이동</td>
+            <td rowspan="3" class="study">공부..🤦‍️</td>
+            <td rowspan="1" class="play">집으로 이동</td>
+            <td rowspan="3" class="study">공부..🤦‍️</td>
+        </tr>
+        <tr>
+            <th scope="row">22:00</th>
+            <td rowspan="2" class="mentoring">멘토링 or 공부</td>
+            <td rowspan="2" class="mentoring">멘토링 or 공부</td>
+        </tr>
+        <tr>
+            <th scope="row">23:00</th>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
